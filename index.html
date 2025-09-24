@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+*{
+margin:0;
+box-sizing: border-box:
+}
+.navbar{
+height:60px;
+background-color:#0f1111;
+color:white;
+display:flex;
+align-items: center;
+justify-content:space-evenly;
+}
+.nav-logo{
+height:50px;
+width:100px;
+}
+.logo{
+background-image:url("https://i.pinimg.com/564x/5d/96/e6/5d96e6b0d3bb71c237b51642a6eb4a29.jpg");
+background-size:cover;
+height:50px;
+width:100%;
+}
+.border:{
+border:1.5px solid transparent;
+}
+.border:hover{
+border: 1.5px solid white;
+}
+.add-first{
+margin-left:15px;
+color:#cccccc;
+font-size:0.85rem;
+}
+.add-second{
+font-size:1rem;
+margin-left:3px;
+}
+.add-icon{
+display:flex;
+align-items:center;
+}
+.nav-serch{
+display:flex;
+justify-content:space-evenly;
+background-color:pink;
+width:620px;
+height:40px;
+border-radius: 4px;
+}
+.seach-select{
+background-color:#f3f3f3;
+width:50px;
+text-align:center;
+border-top-left-radius:4px;
+border-bottom-left-radius:4px;
+}
+.search-input{
+width:100%;
+font-size:1rem;
+border:none;
+}
+.search-icon{
+width: 45px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size:1.2rem;
+background-color:#febd68;
+border-top-right-radius:4px;
+border-bottom-right-radius:4px;
+color:0f1111;
+}
+
+.nav-serch:hover{
+border:2px solid orange;
+}
+span{
+font-size:0.7rem;
+}
+.nav-second{
+  font-size:0.85rem;
+  font-weight:700;
+}
+.nav-cart i{
+ font-size:30px;
+}
+nav-cart{
+ font-size:0.85rem;
+ font-weight:700;
+ }
+ .panel{
+ height:40px;
+ background-color:#222f3d;
+ display:flex;
+ color:white;
+ align-items:center;
+ justify-content:space-evenly;
+ }
+ .panel-ops p{
+ display:inline;
+ margin:15px;
+ }
+ .panel-ops{
+ width:70%;
+ font-size:0.85rem;
+ 
+ }
+ .panel-deals{
+   font-size:0.95rem;
+   font-weight:700;
+ }
+ .hero-section{
+ /*background-image:url("https://images-eu.ssl-images-amazon.com/images/G/31/Events/img24/Jupiter24/Phase3B/J24_P3B_GW_PC_EventHero_NTA_ETmr_2x._CB544142947_.jpg");
+*/ height:350px;
+ background-size:cover;
+ background-position: center;
+ display:flex;
+ align-items:flex-end;
+ transition: background-image 1s ease-in-out;
+ } 
+  .hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.hero-banner {
+  
+	
+	display: block;
+  text-decoration: none;
+}
+
+ /*
+.hero-slider {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}*/
+ .box{
+ height:400px;  
+  width:23% ;
+  margin-top:15px;
+  background-color:white;
+  padding:20px 0px 15px
+  
+ }
+ .shop-section{
+   display:flex;
+   flex-wrap:wrap;
+   justify-content:space-evenly;
+   background-color:#e2e7e6;
+   }
+   .box-img{
+   height:300px;
+   background-size:cover;
+   margin-bottom:1rem;
+   margin-top:1rem;
+   }
+   .box-content{
+   margin-left:1rem;
+   margin-right:1rem;
+  
+   }
+   .box-content p{
+    color:#007185;
+   
+   }
+
+   /*add css for horizontal section*/
+   .gadget-section {
+  padding: 10px 30px;
+  background-color: #f3f3f3;
+  overflow: hidden;
+
+}
+
+.gadget-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.gadget-container {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden; /* 👈 Prevent vertical scroll */
+  white-space: nowrap; /* 👈 Prevent wrapping */
+
+
+  gap: 12px;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+}
+
+.gadget-card {
+  min-width: 150px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 8px;
+  flex-shrink: 0;
+}
+
+.gadget-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.gadget-card p {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.gadget-card img {
+  width: 100%;
+  height: 200px; /* 👈 Fixed height */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+
+ /*footer*/
+ footer{
+ margin-top:15px;
+ }
+.foot-panel{
+background-color:#37475a;
+color:white;
+height:50px;
+display:flex;
+justify-content:center;
+align-items:center;
+} 
+.foot-panel2{
+background-color:#222f3d;
+color:white;
+height:300px;
+display:flex;
+justify-content:space-evenly;
+}
+ul{
+margin-top:20px;
+}
+ul a{
+display:block;
+font-size:0.85rem;
+margin-top:10px;
+color:#dddddd;
+}
+.foot-panel3{
+background-color:#222f3d;
+color:white;
+border-top:0.5px solid white;
+height:70px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+   .logo2{
+   background-image:url("https://i.pinimg.com/736x/6b/f8/e9/6bf8e97b392856f48af3489f1d8e7729.jpg");
+   background-size: cover;
+   height:50px;
+   width:100px;
+   }
+   .foot-panel4{
+    background-color:#0f1111;
+	color:white;
+	font-size:0.7rem;
+   text-align:center;
+   }
+   .pages{
+   font-size:0.7rem;
+   /*text-align:center;
+   padding-top:25px;*/
+   }
+   .copyright{
+   padding-top:5px;
+   
+   }
+
+   @media (max-width: 600px) {
+  .gadget-card img {
+    height: 80px;
+  }
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" i
+</head>
+<body>
+<header>
+
+    <div class="navbar">
+	      <div class="nav-logo border">
+		   <div class="logo"></div>
+		  </div>
+	       <div class="nav-address border">
+		   <p class ="add-first">Dilvery to</p>
+		     <div class="add-icon">
+		        <i class="fa-solid fa-location-dot"></i>
+				  <p class="add-second">India</p>
+				  
+			 </div>
+		   </div>
+	       <div class="nav-serch">
+			     <select class="search-select">
+				   <option>All</option>
+				  </select>
+				  <input placeholder="Search" class="search-input">
+				  <div class="search-icon">
+				     <i class="fa-solid fa-magnifying-glass"></i>
+				  </div>
+				  
+			</div>
+			
+		<div class="nav-sign border">
+	   <p><span>Hello,sign in</span></p>
+	   <p class="nav--second"> Account & Lists</p>
+    </div>
+	
+	  <div class="nav-return border">
+	   <p><span>Returns</span></p>
+	   <p class="nav--second">& Orders</p>
+      </div>
+	    <div class="nav-cart border">
+		<i class="fa-solid fa-cart-shopping"></i>
+		Cart
+		</div>
+	</div>
+	
+	<div class="panel">
+	  <div class="panel all">
+	     <i class="fa-solid fa-bars"></i>
+	    All
+	  </div>
+	  
+	  <div class="panel-ops">
+	 
+	       <p>Fresh</p>
+          <p> MX Player</p>
+           <p>Sell</p>
+           <p>Best Sellers</p>
+           <p>Today's Deals</p>
+          <p> Mobiles</p>
+           <p>Electronics</p>
+          <p> Home & Kitchen</p>
+          <p> Customer Service</p>
+		  </div>
+		  <div class="panel deals">
+		     shop deals in electronics
+		   </div>
+
+		   
+	</div>
+	  <div class="hero-section">
+	  <div class="hero-message"> </div>
+	</div>  
+	<!--	<div class="hero-slider">
+  <div class="slide" style="background-image: url('https://i.pinimg.com/736x/7a/37/03/7a37031dbdc746fd5b297e566da0a033.jpg');"></div>
+  <div class="slide" style="background-image: url('https://i.pinimg.com/736x/d1/8d/df/d18ddfa2ab71270c3e29fc16c87314a7.jpg');"></div>
+  <div class="slide" style="background-image: url('https://i.pinimg.com/736x/c0/e8/8d/c0e88dfb60640699a5269eaf2ce1d765.jpg');"></div>
+</div>  -->
+</header>
+    <div class="shop-section">
+	      <div class="box1 box">
+		      <div class="box-content">
+		       <h2>New deals added everyday</h2>
+		        <div class="box-img" style="background-image:url('https://images-eu.ssl-images-amazon.com/images/G/31/Events/img24/Jupiter24/Phase3/J24_GW_PC_CC_SAD_1x._SY304_CB545060597_.jpg');"></div>
+			     <p>explore now</p>
+			  </div>
+		  </div>
+		  <div class="box2 box">
+		  <div class="box-content">
+		       <h2>Amazon fashion</h2>
+		        <div class="box-img" style="background-image:url('https://m.media-amazon.com/images/I/41B1BGnUnNL._SR480,440_.jpg');"></div>
+			     <p>explore now</p>
+			  </div>
+		  </div>
+		  <div class="box3 box">
+		  <div class="box-content">
+		       <h2>Up to 40% off | Deals on mobiles and accessories</h2>
+		        <div class="box-img" style="background-image:url('https://images-eu.ssl-images-amazon.com/images/G/31/img23/Wireless/riya/iQOOdiwalitiles/PC_CC_379x304_1._SY304_CB545002130_.jpg');"></div>
+			     <p>explore now</p>
+			  </div>
+		  </div>
+		  <div class="box4 box">
+		  <div class="box-content">
+		       <h2>Up to 80% off | Electronics & accessories</h2>
+		        <div class="box-img" style="background-image:url('https://images-eu.ssl-images-amazon.com/images/G/31/img21/Camera/Changes/p2/PC_CC_758x608_CEPC_50._SY304_CB545069641_.jpg');"></div>
+			     <p>explore now</p>
+			  </div>
+		  </div>
+		  	      <div class="box1 box">
+		      <div class="box-content">
+		       <h2>Computers</h2>
+		        <div class="box-img" style="background-image:url('https://m.media-amazon.com/images/I/41Bmui2T3TL._SR480,440_.jpg');"></div>
+			     <p>explore now</p>
+			  </div>
+		  </div>
+		  <div class="box2 box">
+		  <div class="box-content">
+		       <h2>New deals added everyday</h2>
+		        <div class="box-img" style="background-image:url('https://m.media-amazon.com/images/I/516qP0ZGzoL._SR480,440_.jpg');"></div>
+			     <p>explore now</p>
+			  </div>
+		  </div>
+		  <div class="box3 box">
+		  <div class="box-content">
+		       <h2>Smart phones</h2>
+		        <div class="box-img" style="background-image:url('https://m.media-amazon.com/images/I/41WcABualWL._SR480,440_.jpg');"></div>
+			     <p>explore now</p>
+			  </div>
+		  </div>
+		  <div class="box4 box">
+		  <div class="box-content">
+		       <h2>Diwali Decoration Items for Home </h2>
+		        <div class="box-img" style="background-image:url('https://i.pinimg.com/736x/bd/55/84/bd5584fda671b536788974b4fef2ee2b.jpg');"></div>
+			     <p>explore now</p>
+			  </div>
+		  </div>
+		  <!--adding one horizontal section-->
+		  <div class="gadget-section">
+  <h2>Top Selling Girls gadget</h2>
+  <div class="gadget-container">
+    <div class="gadget-card">
+      <img src="https://i.pinimg.com/1200x/30/56/a4/3056a48be32604f1b678464f09eaa9ac.jpg" alt="Gadget 1">
+      <p>Smartwatch Pro</p>
+    </div>
+    <div class="gadget-card">
+      <img src="https://i.pinimg.com/1200x/7b/d0/78/7bd078a7326f32c63703b5e52653a07b.jpg" alt="Gadget 2">
+      <p>Wireless Earbuds</p>
+    </div>
+    <div class="gadget-card">
+      <img src="https://biobeautify.com/cdn/shop/files/rhodium-plated-sterling-silver-emerald-cut-moissanite-half-eternity-ring-Silver-5.jpg?v=1735861531&width=990" alt="Gadget 3">
+      <p>Portable Speaker</p>
+    </div>
+    <div class="gadget-card">
+      <img src="https://i.pinimg.com/736x/7a/d2/dd/7ad2ddf396962c5623f3724e18f4083a.jpg" alt="Gadget 4">
+      <p>Fitness Band</p>
+    </div>
+    <div class="gadget-card">
+      <img src="https://i.pinimg.com/736x/ff/ec/3d/ffec3d520cebf99ccb04b005a66944ee.jpg" alt="Gadget 5">
+      <p>Bluetooth Keyboard</p>
+    </div>
+    <div class="gadget-card">
+      <img src="https://i.pinimg.com/736x/6a/11/16/6a1116a1ef4314b22a420d600ede1f07.jpg" alt="Gadget 6">
+      <p>Mini Tripod</p>
+    </div>
+	<div class="gadget-card">
+      <img src="https://i.pinimg.com/736x/75/d9/08/75d908b63cd439b2dd801df1f2050195.jpg" alt="Gadget 5">
+      <p>Bluetooth Keyboard</p>
+    </div>
+	<div class="gadget-card">
+      <img src="https://i.pinimg.com/1200x/bb/88/48/bb8848fd20ae10e9dec94a37c67f3d57.jpg" alt="Gadget 5">
+      <p>Bluetooth Keyboard</p>
+    </div>
+	<div class="gadget-card">
+      <img src="https://i.pinimg.com/1200x/09/60/e6/0960e6709dd0bf6647309dfa7cb7a801.jpg" alt="Gadget 5">
+      <p>Bluetooth Keyboard</p>
+    </div>
+	<div class="gadget-card">
+      <img src="https://i.pinimg.com/1200x/50/10/a2/5010a2951d837e75f8d7b6f7121f0333.jpg" alt="Gadget 5">
+      <p>Bluetooth Keyboard</p>
+    </div>
+  </div>
+</div>
+		  <div class="box1 box">
+		      <div class="box-content">
+		       <h2>Computers</h2>
+		        <div class="box-img" style="background-image:url('https://i.pinimg.com/1200x/d5/00/d1/d500d17616fd4a71cc3857ca023905d3.jpg');"></div>
+			     <p>explore now</p>
+			  </div>
+		  </div>
+		  <div class="box2 box">
+		  <div class="box-content">
+		       <h2>Lexton 36 Feet Long 40 LED Powe</h2>
+		        <div class="box-img" style="background-image:url('https://i.pinimg.com/1200x/46/ef/a5/46efa59f91d3dc1f4f3b4b68a7427dd4.jpg');"></div>
+			     <p>explore now</p>
+			  </div>
+		  </div>
+		  <div class="box3 box">
+		  <div class="box-content">
+		       <h2>Smart phones</h2>
+		        <div class="box-img" style="background-image:url('https://i.pinimg.com/736x/d1/a7/ca/d1a7ca7ca9e81dda17b7a380659f1cc8.jpg');"></div>
+			     <p>explore now</p>
+			  </div>
+		  </div>
+		  <div class="box4 box">
+		  <div class="box-content">
+		       <h2>Diwali Decoration Items for Home </h2>
+		        <div class="box-img" style="background-image:url('https://m.media-amazon.com/images/I/41si6YGQYoL._SY445_SX342_QL70_FMwebp_.jpg');"></div>
+			     <p>explore now</p>
+			  </div>
+		  </div>
+	</div>
+
+	<!--adding one horizontal section-->
+		  <div class="gadget-section">
+  <h2>Top Selling Boy Gadgets</h2>
+  <div class="gadget-container">
+    <div class="gadget-card">
+      <img src="https://i.pinimg.com/1200x/c6/71/bd/c671bdb5944ffeb89d85e73d0c4e8bd4.jpg" alt="Gadget 1">
+      <p>Smartwatch Pro</p>
+    </div>
+    <div class="gadget-card">
+      <img src="https://i.pinimg.com/736x/9e/4b/5c/9e4b5cbd3405137f9c6d370382230b41.jpg" alt="Gadget 2">
+      <p>Wireless Earbuds</p>
+    </div>
+    <div class="gadget-card">
+      <img src="https://i.pinimg.com/736x/d0/6e/06/d06e060b08c18d64348e3a4c271c8ea8.jpg" alt="Gadget 3">
+      <p>Portable Speaker</p>
+    </div>
+    <div class="gadget-card">
+      <img src="https://i.pinimg.com/736x/57/e0/97/57e097a68a50605f4263d483d6a0ba49.jpg" alt="Gadget 4">
+      <p>Fitness Band</p>
+    </div>
+    <div class="gadget-card">
+      <img src="https://i.pinimg.com/1200x/78/72/cf/7872cfc6f2d8382e861fd42a34e7241b.jpg" alt="Gadget 5">
+      <p>Bluetooth Keyboard</p>
+    </div>
+    <div class="gadget-card">
+      <img src="https://i.pinimg.com/736x/6b/05/85/6b058540514b4d8c6c68af82af37bfc4.jpg" alt="Gadget 6">
+      <p>Mini Tripod</p>
+    </div>
+	<div class="gadget-card">
+      <img src="https://i.pinimg.com/1200x/11/07/1f/11071ff82a0c3d80f3374032f05574d7.jpg" alt="Gadget 5">
+      <p>Bluetooth Keyboard</p>
+    </div>
+	<div class="gadget-card">
+      <img src="https://i.pinimg.com/736x/5a/c3/94/5ac394c41943c87d111253091a048116.jpg" alt="Gadget 5">
+      <p>Bluetooth Keyboard</p>
+    </div>
+	<div class="gadget-card">
+      <img src="https://i.pinimg.com/1200x/4c/08/2a/4c082ad591f7d6bf319fdf37f3acc14c.jpg" alt="Gadget 5">
+      <p>Bluetooth Keyboard</p>
+    </div>
+	<div class="gadget-card">
+      <img src="https://i.pinimg.com/736x/9d/cd/81/9dcd810c9f5d8d476e84c2281cb7e9f8.jpg" alt="Gadget 5">
+      <p>Bluetooth Keyboard</p>
+    </div>
+  </div>
+</div>
+	<script>
+
+		document.querySelectorAll('.box-content p').forEach(p => {
+  p.style.cursor = 'pointer';
+  p.addEventListener('click', () => {
+    window.open('https://www.amazon.in', '_blank');
+  });
+});
+
+//Search Bar Functionality
+document.querySelector('.search-input').addEventListener('keypress', function(e) {
+  if (e.key === 'Enter') {
+    let query = this.value.trim();
+    if (query) {
+      window.open(`https://www.amazon.in/s?k=${encodeURIComponent(query)}`, '_blank');
+    }
+  }
+});
+
+
+document.querySelector('.nav-cart').addEventListener('click', () => {
+  alert("Cart is currently empty!");
+  // Or redirect: window.location.href = "cart.html";
+});
+
+document.querySelector('.foot-panel').addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+
+//for slide img
+
+  
+
+	</script>
+	<footer> 
+	    <div class="foot-panel">
+		  Back to top  
+		</div>
+		<div class="foot-panel2">
+		
+		  <ul>
+		      <p>Get to Know Us</p>
+			  <a>About Amazon</a>
+			  <a>Careers</a>
+>             <a>Press Releases</a>
+              <a>Amazon Science</a>
+		  </ul>
+		  <ul>
+		      <p>Get to Know Us</p>
+			  <a>About Amazon</a>
+			  <a>Careers</a>
+>             <a>Press Releases</a>
+              <a>Amazon Science</a>
+		  </ul>
+		  <ul>
+		      <p>Get to Know Us</p>
+			  <a href="https://www.amazon.in/about">About Amazon</a>
+<a href="https://www.amazon.jobs">Careers</a>
+<a href="https://press.aboutamazon.in">Press Releases</a>
+<a href="https://www.amazon.science">Amazon Science</a>
+
+
+		  </ul>
+		  <ul>
+		      <p>Get to Know Us</p>
+			  <a>About Amazon</a>
+			  <a>Careers</a>
+>             <a>Press Releases</a>
+              <a>Amazon Science</a>
+		  </ul>
+		</div>
+		<div class="foot-panel3">
+		     <div class="logo2"> </div>
+	    </div>
+		<div class="foot-panel4">
+		  <div class="pages">
+		    <a>Condition of use</a>
+		    <a>Privacy Notice</a>
+		    <a>your ads privcy choices</a>
+		  </div>
+		  <div class="copyright">
+		   © 1996-2024, Amazon.com, Inc. or its affiliates
+		  </div>
+		</div>
+	</footer>
+</body>
+
+<script>
+ const heroSection = document.querySelector('.hero-section');
+
+  const images = [
+    "https://i.pinimg.com/736x/32/65/a7/3265a7aeb9f84a48071d0c1f017e6e8e.jpg",
+    "https://i.pinimg.com/1200x/37/76/e8/3776e88d97c25bb0783796887d0a1b18.jpg",
+    "https://i.pinimg.com/1200x/76/89/bc/7689bc5c9e2858e46142e1f92e37c4ce.jpg",
+    "https://i.pinimg.com/1200x/b3/f4/69/b3f469e63882bb0a5635bbfcfcf42467.jpg"
+  ];
+
+  let current = 0;
+
+  function changeBackground() {
+    heroSection.style.backgroundImage = `url('${images[current]}')`;
+    current = (current + 1) % images.length;
+  }
+
+  changeBackground(); // Initial load
+  setInterval(changeBackground, 4000); // Change every 4 seconds
+  
+</script>
+</html>
